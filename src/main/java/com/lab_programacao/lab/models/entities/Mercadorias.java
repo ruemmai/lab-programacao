@@ -1,4 +1,4 @@
-package com.lab_programacao.lab.models;
+package com.lab_programacao.lab.models.entities;
 
 import javax.persistence.*;
 
