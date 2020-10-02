@@ -1,6 +1,6 @@
-package com.lab_programacao.lab.repositories;
+package com.lab_programacao.lab.models.repositories;
 
-import com.lab_programacao.lab.models.Mercadorias;
+import com.lab_programacao.lab.models.entities.Mercadorias;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

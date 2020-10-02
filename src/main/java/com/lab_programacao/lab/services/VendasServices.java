@@ -3,12 +3,11 @@ package com.lab_programacao.lab.services;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import antlr.collections.List;
+import java.util.Date;
+import java.util.List;
 
-import java.sql.Date;
-
-import com.lab_programacao.lab.models.Vendas;
-import com.lab_programacao.lab.repositories.VendasRepository;
+import com.lab_programacao.lab.models.entities.Vendas;
+import com.lab_programacao.lab.models.repositories.VendasRepository;
 
 @Service
 public class VendasServices {
@@ -21,7 +20,9 @@ public class VendasServices {
     return salvo;
   }
 
-  public List<Vendas> obterPorData(Date data) {
-    return repository.findAll();
+  public List<Vendas> obterVendasPorData(Date data) {
+    List<Vendas> vendasPorData;
+    vendasPorData = repository.findVendasByData(data);
+    return vendasPorData;
   }
 }
