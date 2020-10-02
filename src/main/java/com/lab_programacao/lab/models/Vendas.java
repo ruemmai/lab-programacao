@@ -1,6 +1,7 @@
 package com.lab_programacao.lab.models;
 
-import java.sql.Date;
+import java.util.Date;
+
 import javax.persistence.*;
 
 import lombok.AllArgsConstructor;
