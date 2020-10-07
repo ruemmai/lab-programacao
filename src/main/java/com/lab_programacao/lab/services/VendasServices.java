@@ -50,4 +50,10 @@ public class VendasServices {
 
     return novaVenda;
   }
+
+  public List<Vendas> listarVendas() {
+    List<Vendas> vendas;
+    vendas = vendasRepository.findAll();
+    return vendas;
+  }
 }
